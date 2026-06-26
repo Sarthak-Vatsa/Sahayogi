@@ -1,0 +1,19 @@
+You are an expert Instagram Reel Strategist for a wholesome animated storytelling brand.
+Your job is to objectively analyze a video and break it down into strict analytical components.
+
+Because we are in a testing environment without a live video file,
+I will provide you with a scene-by-scene description of the reel, alongside its metadata. Base your entire analysis on this information.
+
+SCENE DESCRIPTION:
+A 14-second animated video. It starts with a close-up of a baby penguin looking sad in the rain.
+On-screen text reads: "When you feel like you don't belong..."
+The camera slowly zooms in on the penguin. Soft piano music plays with rain ASMR.
+At 5 seconds, a piglet walks into the frame holding a tiny umbrella and covers the penguin.
+The penguin looks directly at the camera and smiles.
+At 10 seconds, the scene cuts to a cozy fireplace where both are drinking hot cocoa.
+The pacing is slow and deliberate. There are only two scene changes. No voiceover, just ambient noise and music.
+
+METADATA:
+{metadata}
+
+Extract the analytical data and return it perfectly formatted according to the provided schema.

@@ -1,18 +1,62 @@
 {
-  "reel_id": "short_story_001",
-  "url": "https://instagram.com/reel/dummy123",
-  "creator": "wholesome_tales",
-  "collection_time": "2026-06-26T18:00:00Z",
-  "source": "instagram",
-  "metadata": {
-    "posted_at": "2026-06-25T12:00:00Z",
-    "duration_seconds": 14,
-    "views": 230000,
-    "likes": 25000,
-    "comments": 600,
-    "caption": "Wait for the little twist at the end 🥺 #wholesome #animation",
-    "hashtags": ["wholesome", "animation"],
-    "audio_name": "Original Audio - wholesome_tales",
-    "audio_original": true
-  }
+    "reel_id": "short_story_001",
+    "url": "https://instagram.com/reel/dummy123",
+    "creator": "wholesome_tales",
+    "collection_time": "2026-06-26T18:00:00Z",
+    "source": "instagram",
+    "metadata": {
+        "posted_at": "2026-06-25T12:00:00Z",
+        "duration_seconds": 14,
+        "views": 230000,
+        "likes": 25000,
+        "comments": 600,
+        "caption": "Wait for the little twist at the end \ud83e\udd7a #wholesome #animation",
+        "hashtags": [
+            "wholesome",
+            "animation"
+        ],
+        "audio_name": "Original Audio - wholesome_tales",
+        "audio_original": true
+    },
+    "hook": {
+        "visual_hook": "A close-up of a baby penguin looking sad in the rain, slowly zooming in.",
+        "written_hook": "When you feel like you don't belong...",
+        "spoken_hook": "None",
+        "hook_strength": 8,
+        "hook_type": "emotional"
+    },
+    "story": {
+        "structure": "Problem -> Resolution",
+        "payoff": "The penguin finds friendship and comfort with the piglet by a warm fireplace, drinking hot cocoa.",
+        "ending_type": "resolution",
+        "surprise_present": true
+    },
+    "visual": {
+        "camera_angle": "Close-up",
+        "camera_motion": "Slow zoom in",
+        "lighting": "Soft, transitioning from cool (rain) to warm (fireplace)",
+        "color_palette": "Mixed (cool blues/greys to warm oranges/yellows)",
+        "main_subject": "Baby penguin",
+        "subject_count": 2,
+        "eye_contact": true,
+        "background": "Rainy outdoors, then cozy fireplace interior",
+        "scene_changes": 2
+    },
+    "emotion": {
+        "primary": "Comfort",
+        "secondary": "Empathy",
+        "intensity": 8
+    },
+    "editing": {
+        "pacing": "Slow, deliberate",
+        "average_shot_length": 4.67,
+        "transition_style": "Cuts",
+        "text_frequency": "low"
+    },
+    "audio": {
+        "type": "Music, ASMR",
+        "music": "Soft piano music",
+        "ambient": true,
+        "voiceover": false
+    }
 }
