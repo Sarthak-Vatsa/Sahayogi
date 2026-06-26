@@ -1,0 +1,46 @@
+{
+  "primary_goal": "Create highly shareable wholesome content while maintaining originality.",
+
+  "optimization_targets": [
+
+    "Retention",
+
+    "Shares",
+
+    "Saves",
+
+    "Comments",
+
+    "Follower Growth"
+
+  ],
+
+  "success_metrics": [
+
+    "Average watch time",
+
+    "Completion rate",
+
+    "Views",
+
+    "Views per follower",
+
+    "Share rate",
+
+    "Save rate"
+
+  ],
+
+  "recommendation_preferences": {
+
+    "prefer_originality": true,
+
+    "avoid_copying": true,
+
+    "suggest_new_formats": true,
+
+    "prioritize_recent_trends": true,
+
+    "respect_brand_identity": true
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "reel_id": "",
+  "url": "",
+  "creator": {
+    "username": "",
+    "display_name": "",
+    "followers": null,
+    "category": ""
+  },
+  "collection": {
+    "collected_at": "",
+    "last_updated": "",
+    "source": "instagram"
+  },
+
+  "metadata": {
+    "posted_at": "",
+    "duration_seconds": null,
+
+    "views": null,
+    "likes": null,
+    "comments": null,
+    "shares": null,
+    "saves": null,
+
+    "caption": "",
+    "hashtags": [],
+
+    "audio_name": "",
+    "audio_original": null,
+
+    "thumbnail_url": ""
+  },
+
+  "hook": {
+    "visual_hook": "",
+    "written_hook": "",
+    "spoken_hook": "",
+
+    "hook_type": "",
+    "hook_strength": null,
+
+    "first_frame_description": ""
+  },
+
+  "story": {
+    "story_structure": "",
+
+    "beginning": "",
+    "conflict": "",
+    "payoff": "",
+    "ending_type": "",
+
+    "surprise_present": null,
+
+    "story_summary": ""
+  },
+
+  "visual": {
+    "main_subject": "",
+    "secondary_subjects": [],
+
+    "camera_angle": "",
+    "camera_motion": "",
+
+    "lighting": "",
+    "color_palette": "",
+
+    "background": "",
+
+    "eye_contact": null,
+
+    "scene_changes": null,
+
+    "overall_visual_style": ""
+  },
+
+  "emotion": {
+    "primary_emotion": "",
+    "secondary_emotion": "",
+
+    "emotion_intensity": null,
+
+    "emotional_trigger": ""
+  },
+
+  "editing": {
+    "pacing": "",
+
+    "average_shot_length": null,
+
+    "transition_style": "",
+
+    "text_frequency": "",
+
+    "subtitle_style": ""
+  },
+
+  "audio": {
+    "audio_type": "",
+
+    "music_description": "",
+
+    "ambient_sounds": "",
+
+    "voiceover_present": null,
+
+    "asmr_present": null
+  },
+
+  "engagement_analysis": {
+    "call_to_action": "",
+
+    "comment_trigger": "",
+
+    "share_trigger": "",
+
+    "save_trigger": ""
+  },
+
+  "performance_reasoning": {
+    "why_it_worked": "",
+
+    "strongest_element": "",
+
+    "weakest_element": "",
+
+    "retention_strategy": "",
+
+    "psychological_triggers": [],
+
+    "virality_factors": []
+  },
+
+  "adaptation": {
+    "fits_my_brand": null,
+
+    "adaptability_score": null,
+
+    "copy_risk": "",
+
+    "recommended_characters": [],
+
+    "adaptation_strategy": "",
+
+    "difficulty": null,
+
+    "predicted_success": ""
+  },
+
+  "derived_metrics": {
+    "engagement_rate": null,
+
+    "views_per_follower": null,
+
+    "like_rate": null,
+
+    "comment_rate": null,
+
+    "virality_score": null
+  },
+  "classification": {
+    "content_category": "",
+    "content_format": "",
+    "target_audience": "",
+
+    "is_series": false,
+
+    "estimated_effort": "",
+
+    "evergreen": true,
+
+    "trend_based": false
+  }
+}

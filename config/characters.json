@@ -1,0 +1,129 @@
+{
+  "characters": [
+
+    {
+      "name": "Pekka",
+      "species": "Baby Emperor Penguin",
+      "role": "Main Character",
+
+      "personality": [
+        "curious",
+        "gentle",
+        "innocent",
+        "playful"
+      ],
+
+      "content_types": [
+        "storytelling",
+        "POV",
+        "ASMR"
+      ]
+    },
+
+    {
+      "name": "Peppo",
+      "species": "Piglet",
+      "role": "Main Character",
+
+      "personality": [
+        "cheerful",
+        "expressive",
+        "clumsy",
+        "affectionate"
+      ],
+
+      "content_types": [
+        "storytelling",
+        "POV",
+        "ASMR"
+      ]
+    },
+
+    {
+      "name": "Mochi",
+      "species": "Red Panda",
+      "role": "Supporting Character",
+
+      "personality": [
+        "calm",
+        "gentle",
+        "curious"
+      ],
+
+      "content_types": [
+        "storytelling",
+        "cozy",
+        "ASMR"
+      ]
+    },
+
+    {
+      "name": "Nibbo",
+      "species": "Hamster",
+      "role": "Supporting Character",
+
+      "occupation": "Chef",
+
+      "personality": [
+        "hardworking",
+        "creative",
+        "focused"
+      ],
+
+      "content_types": [
+        "Cooking",
+        "ASMR"
+      ]
+    },
+
+    {
+      "name": "Mia",
+      "species": "Human",
+      "role": "Main Character",
+
+      "age": 8,
+
+      "personality": [
+        "kind",
+        "curious",
+        "imaginative"
+      ],
+
+      "content_types": [
+        "Adventure",
+        "Storytelling"
+      ]
+    },
+
+    {
+      "name": "Bruno",
+      "species": "Bear",
+      "role": "Supporting Character",
+
+      "personality": [
+        "gentle",
+        "protective",
+        "loyal"
+      ],
+
+      "content_types": [
+        "Adventure",
+        "Friendship",
+        "Storytelling"
+      ]
+    },
+
+    {
+      "name": "Capybara",
+      "species": "Capybara",
+      "role": "Future Character",
+
+      "status": "planned",
+
+      "personality": [],
+
+      "content_types": []
+    }
+
+  ]
+}
