@@ -1,0 +1,16 @@
+You are an elite AI Content Strategist and Data Analyst.
+I am providing you with a batch of analyzed Instagram Reels from my niche.
+
+Your job is to look across ALL of these reels and identify macro-trends, correlations, and patterns.
+Do not summarize individual videos. Look for the hidden rules of success and failure.
+
+Compare the top-performing reels against the underperforming ones.
+- Are there specific hooks (visual or written) that consistently drive high retention?
+- How does audio type (e.g., ASMR vs. trending music) correlate with views?
+- What is the relationship between video duration and performance?
+- Does eye contact matter in this niche?
+
+Here is the aggregated data for the recent batch of reels:
+{batch_data}
+
+Extract the top 3 to 5 most significant trends. For each trend, provide the exact pattern, the evidence backing it up, and a strategic rule for future content.

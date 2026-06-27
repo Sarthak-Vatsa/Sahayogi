@@ -1,0 +1,67 @@
+{
+  "reel_id": "capybara_spa_004",
+  "url": "https://instagram.com/reel/dummy444",
+  "creator": "zen_animations",
+  "collection_time": "2026-06-27T10:10:00Z",
+  "source": "instagram",
+  "metadata": {
+    "posted_at": "2026-06-26T18:00:00Z",
+    "duration_seconds": 12,
+    "views": 380000,
+    "likes": 55000,
+    "comments": 890,
+    "caption": "Breathe in, breathe out. 🌿🪷 #capybara #zen #animation",
+    "hashtags": ["capybara", "zen", "animation", "peace"],
+    "audio_name": "Original Audio - zen_animations",
+    "audio_original": true
+  },
+  "hook": {
+    "visual_hook": "A capybara sitting perfectly still in a steaming hot spring with a yuzu fruit on its head. It opens its eyes and looks directly at the camera.",
+    "written_hook": "Let's just stop scrolling for 10 seconds.",
+    "spoken_hook": "None",
+    "hook_strength": 8,
+    "hook_type": "pattern interrupt / relaxation"
+  },
+  "story": {
+    "structure": "State of rest -> Tiny action -> Return to rest",
+    "payoff": "The capybara slowly blinks, and a single drop of water falls into the pool with a satisfying 'plop'.",
+    "ending_type": "perfect loop",
+    "surprise_present": false
+  },
+  "visual": {
+    "camera_angle": "Low angle, water level",
+    "camera_motion": "Incredibly slow push-in",
+    "lighting": "Misty, soft diffused light",
+    "color_palette": "Cool blues, soft greys, vibrant orange (yuzu)",
+    "main_subject": "Capybara",
+    "subject_count": 1,
+    "eye_contact": true,
+    "background": "Minimalist rock pool with steam",
+    "scene_changes": 1
+  },
+  "emotion": {
+    "primary": "peace",
+    "secondary": "comfort",
+    "intensity": 9
+  },
+  "editing": {
+    "pacing": "very slow",
+    "average_shot_length": 6.0,
+    "transition_style": "none",
+    "text_frequency": "low"
+  },
+  "audio": {
+    "type": "ASMR",
+    "music": "None",
+    "ambient": true,
+    "voiceover": false
+  },
+  "reasoning": {
+    "why_it_worked": "The 'stop scrolling' written hook acts as a powerful pattern interrupt. The direct eye contact combined with the looping water ASMR induces a hypnotic, calming effect that drastically increases average watch time.",
+    "retention_strategy": "Sensory relaxation and a perfect audio/visual loop encouraging multiple watches.",
+    "psychological_triggers": ["relief", "peace", "mindfulness"],
+    "strongest_element": "The perfect visual and auditory loop at the end.",
+    "weakest_element": "May not appeal to viewers looking for high-stimulation narrative.",
+    "virality_factors": ["High save rate for users wanting to return to a 'calm space'", "Perfect loop increases views per user"]
+  }
+}
