@@ -1,8 +1,8 @@
-# Creator Insights AI Agent
+# Sahayogi - Creative Insights AI Agent
 
-Creator Insights is an AI-powered research and strategy agent that helps content creators consistently generate high-performing content by learning from successful creators in their niche.
+Sahayogi is an AI-powered research and strategy agent that helps content creators consistently generate high-performing content by learning from successful creators in their niche.
 
-Unlike traditional analytics tools that only display engagement metrics, Creator Insights monitors competitors, analyzes their content, identifies emerging trends, explains why reels perform well, and generates personalized recommendations tailored to a creator's own brand.
+Unlike traditional analytics tools that only display engagement metrics, Sahayogi monitors competitors, analyzes their content, identifies emerging trends, explains why reels perform well, and generates personalized recommendations tailored to a creator's own brand.
 
 The long-term vision is to build an AI content strategist rather than another analytics dashboard.
 
@@ -20,7 +20,7 @@ Every content creator eventually asks the same questions:
 
 Answering these questions manually requires watching hundreds of reels every week.
 
-Creator Insights automates this research process and converts raw analytics into actionable content strategy.
+Sahayogi automates this research process and converts raw analytics into actionable content strategy.
 
 ---
 
