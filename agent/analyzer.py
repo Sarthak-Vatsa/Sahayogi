@@ -88,8 +88,11 @@ def analyze_reel_data(reel_path: str):
     # Inject the metadata into the prompt
     final_prompt = prompt_template.replace("{metadata}", json.dumps(reel_data.get("metadata", {})))
 
-    # 3. Initialize the Gemini Client
+    # 3. Initialize the Gemini Client, (the system automatically loads the API key from the .env file)
     client = genai.Client()
+
+    #Can also be done like this if you want to explicitly pass the API key:
+    #client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 
     print("[Analyzer] Sending data to Gemini API for structural analysis...")
 
