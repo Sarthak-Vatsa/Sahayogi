@@ -34,6 +34,7 @@ def detect_market_trends():
 
     print("[Trend Engine] Scanning for processed reels...")
 
+    #List of json objects
     aggregated_data = []
 
     # 1. Loop through all JSON files in the reels directory
