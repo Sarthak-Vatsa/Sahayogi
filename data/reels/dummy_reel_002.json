@@ -14,54 +14,5 @@
     "hashtags": ["cozyvibes", "asmr", "animation"],
     "audio_name": "Original Audio - cozy_animal_tales",
     "audio_original": true
-  },
-  "hook": {
-    "visual_hook": "Close up of a red panda's paws kneading dough. The panda looks up and makes direct eye contact with the viewer.",
-    "written_hook": "POV: You've had a long day and just need a quiet moment.",
-    "spoken_hook": "None",
-    "hook_strength": 9,
-    "hook_type": "empathy / relatable"
-  },
-  "story": {
-    "structure": "Preparation -> Creation -> Sharing",
-    "payoff": "The red panda pushes a freshly baked croissant toward the camera (the viewer).",
-    "ending_type": "resolution",
-    "surprise_present": false
-  },
-  "visual": {
-    "camera_angle": "Eye-level intimate",
-    "camera_motion": "Static with slight handheld drift",
-    "lighting": "Warm, golden hour lighting",
-    "color_palette": "Warm browns, soft yellows, muted greens",
-    "main_subject": "Red Panda",
-    "subject_count": 1,
-    "eye_contact": true,
-    "background": "A rustic, wooden cabin kitchen",
-    "scene_changes": 3
-  },
-  "emotion": {
-    "primary": "comfort",
-    "secondary": "peace",
-    "intensity": 8
-  },
-  "editing": {
-    "pacing": "slow",
-    "average_shot_length": 3.5,
-    "transition_style": "soft crossfade",
-    "text_frequency": "low"
-  },
-  "audio": {
-    "type": "ASMR",
-    "music": "Very faint lo-fi piano",
-    "ambient": true,
-    "voiceover": false
-  },
-  "reasoning": {
-    "why_it_worked": "The combination of immediate eye contact and a highly relatable written hook established an instant parasocial connection. The high-quality dough-kneading ASMR kept viewers watching until the payoff.",
-    "retention_strategy": "Auditory satisfaction (ASMR) combined with the anticipation of seeing the finished baked good.",
-    "psychological_triggers": ["empathy", "comfort", "anticipation"],
-    "strongest_element": "The audio soundscape (ASMR)",
-    "weakest_element": "Visual background is slightly out of focus, though this adds to the cozy depth of field.",
-    "virality_factors": ["Highly shareable as a 'send this to a stressed friend' video", "Loopable audio"]
   }
 }

@@ -11,57 +11,12 @@
     "likes": 3200,
     "comments": 45,
     "caption": "Look at these cute animal moments! Which is your fav? 👇 #cute #animals",
-    "hashtags": ["cute", "animals", "funny"],
+    "hashtags": [
+      "cute",
+      "animals",
+      "funny"
+    ],
     "audio_name": "Trending Pop Song - Speed Up",
     "audio_original": false
-  },
-  "hook": {
-    "visual_hook": "Fast montage of three different animals running in a forest.",
-    "written_hook": "Wait for the cutest moment!!",
-    "spoken_hook": "None",
-    "hook_strength": 4,
-    "hook_type": "clickbait / curiosity"
-  },
-  "story": {
-    "structure": "Random montage",
-    "payoff": "A squirrel dropping an acorn",
-    "ending_type": "abrupt cut",
-    "surprise_present": true
-  },
-  "visual": {
-    "camera_angle": "Various wide shots",
-    "camera_motion": "Fast pans and zooms",
-    "lighting": "Bright, harsh daylight",
-    "color_palette": "Vibrant greens and blues",
-    "main_subject": "Multiple animals",
-    "subject_count": 5,
-    "eye_contact": false,
-    "background": "Various outdoor settings",
-    "scene_changes": 8
-  },
-  "emotion": {
-    "primary": "amusement",
-    "secondary": "chaos",
-    "intensity": 5
-  },
-  "editing": {
-    "pacing": "fast",
-    "average_shot_length": 1.2,
-    "transition_style": "hard cuts",
-    "text_frequency": "high"
-  },
-  "audio": {
-    "type": "trending music",
-    "music": "High-energy pop song snippet",
-    "ambient": false,
-    "voiceover": false
-  },
-  "reasoning": {
-    "why_it_worked": "This reel underperformed the creator's average. The fast pacing and loud trending music clash with the 'wholesome/comfort' niche expectations. Viewers dropped off early.",
-    "retention_strategy": "False curiosity gap ('Wait for it') which failed to hold attention due to lack of narrative.",
-    "psychological_triggers": ["fleeting curiosity"],
-    "strongest_element": "The individual animation quality of the models.",
-    "weakest_element": "Complete lack of narrative and emotional connection; jarring audio.",
-    "virality_factors": ["Used a trending audio, but it didn't fit the visual context, nullifying the algorithmic boost."]
   }
 }

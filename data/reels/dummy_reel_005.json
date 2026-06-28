@@ -11,57 +11,13 @@
     "likes": 14000,
     "comments": 210,
     "caption": "The little fox finally found his way home. 🦊✨ #storytelling #animation",
-    "hashtags": ["storytelling", "animation", "fox", "magic"],
+    "hashtags": [
+      "storytelling",
+      "animation",
+      "fox",
+      "magic"
+    ],
     "audio_name": "Cinematic Orchestral Swell",
     "audio_original": false
-  },
-  "hook": {
-    "visual_hook": "Wide shot of a tiny fox looking lost in a massive, dark, snowy forest.",
-    "written_hook": "None",
-    "spoken_hook": "None",
-    "hook_strength": 6,
-    "hook_type": "visual awe / isolation"
-  },
-  "story": {
-    "structure": "Problem -> Discovery -> Resolution",
-    "payoff": "The fox finds a glowing magical lantern that lights up the snow.",
-    "ending_type": "resolution",
-    "surprise_present": false
-  },
-  "visual": {
-    "camera_angle": "High angle wide shot moving to close up",
-    "camera_motion": "Cinematic crane down",
-    "lighting": "Dark, high contrast with a single bright light source",
-    "color_palette": "Deep blues, stark whites, glowing orange",
-    "main_subject": "Fox",
-    "subject_count": 1,
-    "eye_contact": false,
-    "background": "Snowy mystical forest",
-    "scene_changes": 4
-  },
-  "emotion": {
-    "primary": "wonder",
-    "secondary": "melancholy",
-    "intensity": 7
-  },
-  "editing": {
-    "pacing": "moderate",
-    "average_shot_length": 4.5,
-    "transition_style": "fade to black",
-    "text_frequency": "none"
-  },
-  "audio": {
-    "type": "music",
-    "music": "Epic orchestral score",
-    "ambient": false,
-    "voiceover": false
-  },
-  "reasoning": {
-    "why_it_worked": "Performed reasonably well due to high-quality cinematic visuals and a clear emotional arc (loneliness to hope).",
-    "retention_strategy": "Classic storytelling arc; viewers wanted to see if the fox would be okay.",
-    "psychological_triggers": ["empathy", "wonder"],
-    "strongest_element": "The lighting and color grading during the payoff.",
-    "weakest_element": "The lack of an immediate written hook in the first 3 seconds led to a 40% drop-off before the story could unfold.",
-    "virality_factors": ["Beautiful visuals prompt shares, but lack of relatability limits explosive growth."]
   }
 }
