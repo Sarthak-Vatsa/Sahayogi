@@ -1,72 +1,109 @@
+import os
 import json
 from pathlib import Path
+from datetime import datetime, timezone
+from dotenv import load_dotenv
+from apify_client import ApifyClient
+
+# Load the API keys from .env
+load_dotenv()
 
 def fetch_reel_metadata(url: str) -> dict:
     """
-    Simulates scraping an Instagram reel by loading local dummy data.
-
-    Args:
-        url (str): The Instagram Reel URL.
-
-    Returns:
-        dict: A dictionary containing the Basic Info and Metadata of the reel.
+    Scrapes a live Instagram reel using Apify's dedicated Reel Scraper
+    and maps the deep raw data into our strict Sahayogi reel_schema.
     """
-    print(f"[Collector] Initializing scrape for URL: {url}")
+    print(f"[Collector] Initializing LIVE scrape for URL: {url}")
 
-    # pathlib helps us safely build file paths regardless of Mac or Windows
-    # __file__ refers to collector.py. We go up one level (parent) to 'sahayogi', then into 'data/reels'
-    base_dir = Path(__file__).resolve().parent.parent
-    dummy_file_path = base_dir / "data" / "reels" / "dummy_reel_001.json"
+    apify_token = os.getenv("APIFY_API_TOKEN")
+    if not apify_token:
+        print("[Error] APIFY_API_TOKEN not found in .env file.")
+        return {}
 
-    print(f"[Collector] Simulating web request... Loading local data instead.")
+    # 1. Initialize the Apify Client
+    client = ApifyClient(apify_token)
+
+    # 2. Configure the Scraper Input
+    # Using 'directUrls' to target exactly one reel for our Stage 1 test
+    run_input = {
+        "username": [url]  # Apify calls this 'username' even when you pass a direct reel URL
+    }
+
+    print("[Collector] Contacting Apify servers using 'instagram-reel-scraper'...")
 
     try:
-        with open(dummy_file_path, "r", encoding="utf-8") as file:
-            reel_data = json.load(file)
-            print("[Collector] Successfully retrieved metadata!")
-            return reel_data
+        # 3. Run the Dedicated Reel Scraper Actor
+        run = client.actor("apify/instagram-reel-scraper").call(run_input=run_input)
 
-    except FileNotFoundError:
-        print(f"[Error] Could not find dummy data at {dummy_file_path}")
-        return {}
-    except json.JSONDecodeError:
-        print("[Error] The dummy data file contains invalid JSON.")
+        # 4. Fetch the results from the dataset
+        dataset_items = client.dataset(run.default_dataset_id).list_items().items
+
+        if not dataset_items:
+            print(f"[Error] Apify returned no data for {url}")
+            return {}
+
+        raw_data = dataset_items[0]
+
+        print("[Collector] Data retrieved! Mapping to Sahayogi schema...")
+
+        # 5. THE TRANSLATOR: Map Apify's deep Reel data to our clean schema.
+        # This scraper has slightly different (and better) key names than the generic one.
+        mapped_reel = {
+            # Safely grab the ID, defaulting to unknown
+            "reel_id": raw_data.get("id", raw_data.get("shortCode", "unknown_id")),
+            "url": url,
+            "creator": raw_data.get("ownerUsername", "unknown_creator"),
+            "collection_time": datetime.now(timezone.utc).isoformat(),
+            "source": "instagram",
+            "metadata": {
+                "posted_at": raw_data.get("timestamp", ""),
+                # The Reel scraper outputs videoDuration directly
+                "duration_seconds": raw_data.get("videoDuration", 0),
+
+                # Views on Reels are technically "plays". We check both just in case.
+                "views": raw_data.get("videoPlayCount", raw_data.get("playsCount", 0)),
+                "likes": raw_data.get("likesCount", 0),
+                "comments": raw_data.get("commentsCount", 0),
+
+                "caption": raw_data.get("caption", ""),
+
+                # Extract hashtags directly
+                "hashtags": raw_data.get("hashtags", []),
+
+                # Extracting deep audio metadata that the generic scraper often misses
+                "audio_name": raw_data.get("musicInfo", {}).get("musicName", "Original/Unknown Audio"),
+                "audio_original": raw_data.get("musicInfo", {}).get("isOriginalSound", True)
+            }
+        }
+
+        print("[Collector] Successfully mapped live data!")
+        return mapped_reel
+
+    except Exception as e:
+        print(f"[Error] The scraper failed: {str(e)}")
         return {}
 
+
+# ==========================================
+# ISOLATED TEST BLOCK
+# ==========================================
 if __name__ == "__main__":
-    # This block only runs if you execute this specific file directly.
-    # It will NOT run when main.py imports this module later.
+    # Test it with a real URL!
+    test_url = "https://www.instagram.com/reel/DZUooz3Tvio/?igsh=MWVrY2ZpandkdmE0MQ=="
 
-    test_url = "https://instagram.com/reel/dummy123"
     result = fetch_reel_metadata(test_url)
 
-    print("\n--- Test Output ---")
-    # json.dumps with indent=4 prints the dictionary in a highly readable, formatted way
-    print(json.dumps(result, indent=4))
+    if result:
+        print("\n--- Live Scrape Output ---")
+        print(json.dumps(result, indent=4))
 
-# later, when we fetch actual data and map it to our reel_schema, we can replace the above function with the following:
+        # Save it to prove it works
+        base_dir = Path(__file__).resolve().parent.parent
+        out_path = base_dir / "data" / "reels" / f"{result['reel_id']}.json"
 
-# def fetch_reel_metadata(url: str) -> dict:
-#     # 1. Make the live network request to Instagram
-#     raw_response = instagram_scraper.get_reel(url)
-#
-#     # 2. CONVERSION STEP: Map the messy live data to our strict schema
-#     mapped_data = {
-#         "reel_id": raw_response.media_id,
-#         "url": url,
-#         "creator": raw_response.owner_username,
-#         "collection_time": get_current_timestamp(),
-#         "source": "instagram",
-#         "metadata": {
-#             "posted_at": raw_response.date_utc.isoformat(),
-#             "duration_seconds": raw_response.video_duration,
-#             "views": raw_response.view_count,
-#             "likes": raw_response.like_count,
-#             "comments": raw_response.comment_count,
-#             "caption": raw_response.caption,
-#             "hashtags": extract_hashtags(raw_response.caption),
-#             "audio_name": raw_response.audio_title,
-#             "audio_original": raw_response.is_video_original_sound
-#         }
-#     }
-#    return mapped_data
+        # Ensure directory exists
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(result, f, indent=4)
+            print(f"\n[Success] Live reel saved to {out_path}")

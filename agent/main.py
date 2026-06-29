@@ -21,7 +21,7 @@ def run_sahayogi_pipeline():
     # Simulating a list of target URLs we want to process this week
     # In Phase 2, this will be dynamically populated by your competitors list!
     target_urls = [
-        "https://instagram.com/reel/dummy123"
+        "https://www.instagram.com/reel/DZUooz3Tvio/?igsh=MWVrY2ZpandkdmE0MQ=="
     ]
 
     print(f"[Main Pipeline] Processing a batch of {len(target_urls)} reels...")
